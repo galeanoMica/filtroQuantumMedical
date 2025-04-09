@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "nombre": "Julian",
+        "apellido": "Botter",
+        "especialidad": "Clinico",
+        "contacto": {
+            "email": "julianbotter@quantummedical.com",
+            "telefono": 112344323
+        },
+        "horario": {
+            "dia": ["lunes","miercoles","viernes"],
+            "horario": "9:00 - 15:00"
+        },
+        "disponible": true
+    },
+    {
+        "id": 2,
+        "nombre": "Laura",
+        "apellido": "Wabers",
+        "especialidad": "Cardiologia",
+        "contacto": {
+            "email": "laurawabers@quantummedical.com",
+            "telefono": 12334725
+        },
+        "horario": {
+            "dia": ["martes","miercoles","jueves"],
+            "horario": "12:00 - 17:00"
+        },
+        "disponible": true
+    },
+    {
+        "id": 3,
+        "nombre": "Andrea",
+        "apellido": "Juerst",
+        "especialidad": "Clinico",
+        "contacto": {
+            "email": "andreajuerst@quantummedical.com",
+            "telefono": 11546467
+        },
+        "horario": {
+            "dia": ["lunes","miercoles","viernes"],
+            "horario": "13:00 - 18:00"
+        },
+        "disponible": true
+    },
+    {
+        "id": 4,
+        "nombre": "Hernan",
+        "apellido": "Countde",
+        "especialidad": "Ginecologia",
+        "contacto": {
+            "email": "hernancountde@quantummedical.com",
+            "telefono": 112344323
+        },
+        "horario": {
+            "dia": ["lunes","viernes"],
+            "horario": "8:00 - 15:00"
+        },
+        "disponible": true
+    },
+    {
+        "id": 5,
+        "nombre": "Estela",
+        "apellido": "Munneco",
+        "especialidad": "Cardiologia",
+        "contacto": {
+            "email": "estelamunneco@quantummedical.com",
+            "telefono": 11857384
+        },
+        "horario": {
+            "dia": ["jueves","viernes","sabado"],
+            "horario": "9:00 - 15:00"
+        },
+        "disponible": true
+    },
+    {
+        "id": 6,
+        "nombre": "Cristian",
+        "apellido": "Molpie",
+        "especialidad": "Endocrinologia",
+        "contacto": {
+            "email": "cristianmolpie@quantummedical.com",
+            "telefono": 118346739
+        },
+        "horario": {
+            "dia": ["miercoles","viernes"],
+            "horario": "13:00 - 17:00"
+        },
+        "disponible": true
+    },
+    {
+        "id": 7,
+        "nombre": "Ricardo",
+        "apellido": "Doncel",
+        "especialidad": "Clinico",
+        "contacto": {
+            "email": "ricardodoncel@quantummedical.com",
+            "telefono": 11908873
+        },
+        "horario": {
+            "dia": ["viernes","sabado"],
+            "horario": "14:00 - 18:00"
+        },
+        "disponible": true
+    }
+]

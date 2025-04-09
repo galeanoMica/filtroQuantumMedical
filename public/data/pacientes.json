@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan",
+        "apellido": "Prett",
+        "fecha_nacimiento": "05/12/1995",
+        "genero": "Masculino",
+        "contacto": {
+            "telefono": 11223344,
+            "email": "juan-prett@gmail.com"
+        },
+        "documento": {
+            "tipo": "DNI",
+            "numero": "39257635"
+        },
+        "direccion": {
+            "localidad": "Jose C. Paz",
+            "calle": "Pascual",
+            "numero": 1223
+        }
+    },
+    {
+        "id": 1,
+        "nombre": "Lorena",
+        "apellido": "Datcon",
+        "fecha_nacimiento": "14/05/1968",
+        "genero": "Femenino",
+        "contacto": {
+            "telefono": 11673493,
+            "email": "lore12@gmail.com"
+        },
+        "documento": {
+            "tipo": "DNI",
+            "numero": "20457681"
+        },
+        "direccion": {
+            "localidad": "Malvinas Argentinas",
+            "calle": "Pueyredon",
+            "numero": 7833
+        }
+    }
+]
