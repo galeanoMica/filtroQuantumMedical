@@ -1,10 +1,10 @@
 import { Container } from "@mui/material";
-import ListCardCountry from "./components/ListCardCountry";
+import ListCardMedical from "./components/ListCardMedical";
 
 export default function App() {
   return (
     <Container maxWidth="md">
-      <ListCardCountry />
+      <ListCardMedical />
     </Container>
   );
 }

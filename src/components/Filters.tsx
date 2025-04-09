@@ -9,12 +9,13 @@ import {
   ListItemText,
 } from "@mui/material";
 import { useMemo, useState } from "react";
-import Country from "./Country";
-type FilterFunction = (c: Country) => boolean;
+import Medico from "./Medicos";
 
-interface FilterCountryProps {
+type FilterFunction = (c: Medico) => boolean;
+
+interface FilterMedicalProps {
   onFilterChange: (_: FilterFunction[]) => void;
-  subRegionesOptions: string[];
+  especialtiesOptions: string[];
 }
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -27,24 +28,24 @@ const MenuProps = {
   },
 };
 
-export default function FilterCountry({
+export default function FilterMedical({
   onFilterChange,
-  subRegionesOptions,
-}: FilterCountryProps) {
+  especialtiesOptions,
+}: FilterMedicalProps) {
   const [selectedFilter, setSelectedFilter] = useState<string[]>(["Todos"]);
 
   const filters = useMemo(
     () =>
-      subRegionesOptions.reduce<Record<string, (c: Country) => boolean>>(
-        (acc, subregion) => {
-          acc[subregion] = (c: Country) =>
-            c.subregion === (subregion === "Todos" ? c.subregion : subregion);
+      especialtiesOptions.reduce<Record<string, (c: Medico) => boolean>>(
+        (acc, especialidad) => {
+          acc[especialidad] = (c: Medico) =>
+            c.especialidad === (especialidad === "Todos" ? c.especialidad : especialidad);
           return acc;
         },
         {}
       ),
 
-    [subRegionesOptions]
+    [especialtiesOptions]
   );
 
   const handleChange = (event: SelectChangeEvent<typeof selectedFilter>) => {
@@ -65,7 +66,7 @@ export default function FilterCountry({
     <>
       <FormControl fullWidth>
         <InputLabel id="filter-simple-select-label" shrink>
-          Filtro por Región
+          Filtro por Especialidad
         </InputLabel>
         <Select
           label="Filtros"
@@ -74,11 +75,11 @@ export default function FilterCountry({
           multiple
           value={selectedFilter}
           onChange={handleChange}
-          input={<OutlinedInput label="Filtro por Región" />}
+          input={<OutlinedInput label="Filtro por Especialidad" />}
           renderValue={(selected) => selected.join(", ")}
           MenuProps={MenuProps}
         >
-          {subRegionesOptions.map((each: string) => (
+          {especialtiesOptions.map((each: string) => (
             <MenuItem key={each} value={each}>
               <Checkbox checked={selectedFilter.includes(each)} />
               <ListItemText primary={each} />
